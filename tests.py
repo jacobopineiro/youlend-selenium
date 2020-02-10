@@ -32,7 +32,7 @@ class AutomationPracticeTest(unittest.TestCase):
 
         # Step 1: Quick View an item:
         home_page.quick_view_click(HomePageLocators.FIRST_PRODUCT)
-        time.sleep(5)
+        time.sleep(10)
 
         # Step 2: Change size of the item:
         home_page.change_item_size('L')
@@ -47,7 +47,7 @@ class AutomationPracticeTest(unittest.TestCase):
 
         # Step 5: Quick View different item (and store values for future asserts):
         home_page.quick_view_click(HomePageLocators.SECOND_PRODUCT)
-        time.sleep(5)
+        time.sleep(10)
         second_item_size_quickview = home_page.get_size_quick_view()
         second_item_price_quickview = home_page.get_price_quick_view()
 
